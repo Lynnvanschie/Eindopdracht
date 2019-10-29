@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>Heel Holland Bakt</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body class="contactpagina">
+	<header>
+		<nav>
+			<a href="index.html"><img src="img/logo.png" alt="Logo Heel Holland Bakt"></a>
+			<ul>
+				<li><a href="index.html">RECEPTEN</a></li>
+				<li><a href="">BAK-INFO</a></li>
+				<li><a href="">UITZENDINGEN</a></li>
+				<li><a href="">KANDIDATEN</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h1>Contact</h1>
+			<form class="contact">
+				<fieldset>
+					<legend>Persoonlijke gegevens</legend>
+					<label for="vnaam">
+						Voornaam
+						<input type="text" name="vnaam" id="vnaam" required>
+					</label>
+					<label for="anaam">
+						Achternaam
+						<input type="text" name="anaam" id="anaam" required >
+					</label>
+					<div class="gender">
+						<label for="man">
+							<input type="radio" name="gender" id="man" required checked="checked">
+							Man
+						</label>
+						<label for="vrouw">
+							<input type="radio" name="gender" id="vrouw" >
+							Vrouw
+						</label>
+						<label for="overig">
+							<input type="radio" name="gender" id="overig">
+							Overig
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>Contact gegevens</legend>
+					<label for="e-mail">
+						Email adres
+						<input type="email" name="e-mail" id="e-mail" required>
+					</label>
+					<label for="telefoon">
+						Telefoon nummer
+						<input type="tel" name="telefoon" id="telefoon" required>
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Bericht</legend>
+					<textarea name="bericht" required="required"></textarea>
+				</fieldset>
+				<button class="send">Verstuur</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
